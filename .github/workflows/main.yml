@@ -49,6 +49,5 @@ jobs:
       - name: Build and analyze with SonarQube
         run: mvn verify sonar:sonar
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  # Make sure to add your SonarQube token as a secret in your repository
-
-      # You may want to add more SonarQube related steps or configurations based on your needs.
+          GIT_HUB_TOKEN: ${{ secrets.GIT_HUB_TOKEN }}
+          SONARCLOUD_TOKEN: ${{ secrets.SONAR_TOKEN }}
