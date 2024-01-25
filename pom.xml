@@ -16,6 +16,10 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.projectKey>Swathi3801_sbdevtools</sonar.projectKey>
+		<sonar.organization>swathi3801</sonar.organization>
+		<sonar.login>${env.GITHUB_ACTIONS_SONAR}</sonar.login>
 	</properties>
 	<dependencies>
 
