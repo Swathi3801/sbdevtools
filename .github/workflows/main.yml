@@ -47,7 +47,7 @@ jobs:
           cache: maven
 
       - name: Build and analyze with SonarQube
-        run: mvn verify sonar:sonar
+        run:  mvn -B verify sonar:sonar -Dsonar.projectKey=Swathi3801_sbdevtools -Dsonar.organization=swathi3801 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONARCLOUD_TOKEN
         env:
           GIT_HUB_TOKEN: ${{ secrets.GIT_HUB_TOKEN }}
           SONARCLOUD_TOKEN: ${{ secrets.SONAR_TOKEN }}
